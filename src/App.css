@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.gameCard {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     width: 200px;
+     height: 250px;
+     padding: 25px;
+     margin: 50px;
+     border: 1px solid red;
+}
