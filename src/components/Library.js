@@ -3,14 +3,11 @@ import "../App.css";
 import GameCard from './GameCard'
 
 export default function Library(props) {
-     const [games, setGames] = useState(props.games)
      return (
           <div className="allGames">
-               <GameCard />
-               <GameCard />
-               <GameCard />
-               <GameCard />
-               <GameCard />  
+               {props.games && props.games.map(
+                    game => <GameCard game={game}/>
+               )}
           </div>
      );
 }

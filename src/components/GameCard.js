@@ -16,7 +16,8 @@ class GameCard extends React.Component {
           this.setState(prevState => ({isFlipped: !prevState.isFlipped}));
      }
 
-     render() {
+     render(props) {
+          console.log(this.props.games)
           return (
                <div onClick={this.handleClick}>
                     <ReactCardFlip
@@ -24,7 +25,7 @@ class GameCard extends React.Component {
                          flipDirection="horizontal"
                     >
                          <div className="gameCard">
-                              This is the front of the card.
+                              <h5>{this.props.game.name}</h5>
                          </div>
 
                          <div className="gameCard">
