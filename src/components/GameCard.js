@@ -25,6 +25,8 @@ class GameCard extends React.Component {
                          flipDirection="horizontal"
                     >
                          <div className="gameCard">
+                              <img src={this.props.game.boxArt} />
+                              <br />
                               <h5>{this.props.game.name}</h5>
                          </div>
 
