@@ -40,7 +40,7 @@
 .allGames {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 80px;
   width: 100vw;
   height: 100vh
@@ -48,12 +48,14 @@
 
 .gameCard {
      display: flex;
-     justify-content: center;
+     justify-content: flex-start;
      flex-direction: column;
      border-radius: 5%;
      width: 200px;
      height: 300px;
      padding: 25px;
+     margin-left: 50px;
      background-color: #D3643B;
-     color: white
+     color: white;
+     overflow: scroll;
 }

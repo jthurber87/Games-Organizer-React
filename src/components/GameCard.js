@@ -29,7 +29,8 @@ class GameCard extends React.Component {
                          </div>
 
                          <div className="gameCard">
-                              This is the back of the card.
+                              <h5>Players: {this.props.game.players}</h5>
+                              <h6>{this.props.game.description}</h6>
                          </div>
                     </ReactCardFlip>
                </div>
