@@ -37,13 +37,25 @@
   }
 }
 
+.allGames {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 80px;
+  width: 100vw;
+  height: 100vh
+  /* margin-top: 40px; */
+}
+
 .gameCard {
      display: flex;
      justify-content: center;
      flex-direction: column;
+     border-radius: 5%;
      width: 200px;
-     height: 250px;
+     height: 300px;
      padding: 25px;
-     margin: 50px;
-     border: 1px solid red;
+     background-color: #D3643B;
+     color: white
 }

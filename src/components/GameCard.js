@@ -18,16 +18,16 @@ class GameCard extends React.Component {
 
      render() {
           return (
-               <div onClick={this.handleClick} className="gameCard">
+               <div onClick={this.handleClick}>
                     <ReactCardFlip
                          isFlipped={this.state.isFlipped}
                          flipDirection="horizontal"
                     >
-                         <div>
+                         <div className="gameCard">
                               This is the front of the card.
                          </div>
 
-                         <div>
+                         <div className="gameCard">
                               This is the back of the card.
                          </div>
                     </ReactCardFlip>

@@ -5,7 +5,7 @@ import {initializeApp} from "firebase/app";
 import {getAnalytics} from "firebase/analytics";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from './components/NavBar'
-import GameCard from './components/GameCard'
+import Library from './components/Library'
 
 const firebaseConfig = {
      apiKey: "AIzaSyDqrOG38IzexaGJY_bUWWQC70h0FsyiVlI",
@@ -25,10 +25,14 @@ function App() {
      const user = {
           name: "Jay Thurber"
      };
+     const games = [
+          {name: "Azul"},
+          {name: "Splendor"}
+     ]
      return (
           <>
                <NavBar user={user}/>
-               <GameCard />
+               <Library games={games}/>
           </>
      );
 }
