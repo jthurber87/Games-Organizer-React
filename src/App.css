@@ -48,7 +48,7 @@
 
 .gameCard {
      display: flex;
-     justify-content: center;
+     justify-content: flex-start;
      text-align: center;
      flex-direction: column;
      border-radius: 5%;

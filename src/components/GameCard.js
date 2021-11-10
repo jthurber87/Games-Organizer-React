@@ -16,7 +16,7 @@ class GameCard extends React.Component {
           this.setState(prevState => ({isFlipped: !prevState.isFlipped}));
      }
 
-     render(props) {
+     render() {
           console.log(this.props.games)
           return (
                <div onClick={this.handleClick}>
@@ -25,9 +25,16 @@ class GameCard extends React.Component {
                          flipDirection="horizontal"
                     >
                          <div className="gameCard">
-                              <img src={this.props.game.boxArt} />
-                              <br />
-                              <h5>{this.props.game.name}</h5>
+                              {
+                                   this.props.game.boxArt ?
+                                   <>
+                                        <img src={this.props.game.boxArt} />
+                                        <br/>
+                                        <h5>{this.props.game.name}</h5>
+                                   </>
+                                   :
+                                   <h5>{this.props.game.name}</h5>
+                              }
                          </div>
 
                          <div className="gameCard">
